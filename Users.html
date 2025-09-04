@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" crossorigin="anonymous" />
+</head>
+<body>
+  <header>
+    <h1>👥 Users</h1>
+    <button id="themeToggle" class="pill">🌙 / ☀️</button>
+  </header>
+
+  <div class="wrap">
+    <nav class="tabs">
+      <a href="index.html"><button>📊 Dashboard</button></a>
+      <a href="posts.html"><button>📝 Posts</button></a>
+    </nav>
+
+    <div class="table-wrapper">
+    <table id="usersTable" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Company</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  </div>
+
+  <div class="loader" id="loader"><div class="spin"></div></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+  <script src="JS/api.js"></script>
+  <script src="JS/main.js"></script>
+  <script src="JS/users.js"></script>
+</body>
+</html>

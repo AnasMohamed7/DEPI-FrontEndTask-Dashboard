@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anas Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin="anonymous" />
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+
+  <!-- Toastr -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" crossorigin="anonymous" />
+</head>
+<body>
+  <header>
+    <h1>📊 Anas Dashboard</h1>
+    <button id="themeToggle" class="pill">🌙 / ☀️</button>
+  </header>
+
+  <section class="hero">
+    <h2 class="animate__animated animate__fadeInUp">
+      ✨ Best Place To Track Your Platform Activity! ✨
+    </h2>
+  </section>
+
+
+  <section id="dashboard" class="tab animate__animated animate__fadeIn">
+    <div class="interactive-dashboard">
+  
+      <!-- Users -->
+       
+      <a href="Users.html" class="dash-card" data-target="users">
+        <div class="dash-num" id="statUsers">0</div>
+        <h2>👤 Users</h2>
+        <p>Manage platform users</p>
+      </a>
+  
+      <!-- Posts -->
+      <a href="Posts.html" class="dash-card" data-target="posts">
+        <div class="dash-num" id="statPosts">0</div>
+        <h2>📝 Posts</h2>
+        <p>Manage posts content</p>
+      </a>
+  
+      <!-- Comments -->
+      <a href="Posts.html" class="dash-card" data-target="comments">
+        <div class="dash-num" id="statComments">0</div>
+        <h2>💬 Comments</h2>
+        <p>View all comments</p>
+      </a>
+  
+    </div>
+  </section>
+  
+  
+
+
+  
+  <!-- Loader -->
+  <div class="loader" id="loader"><div class="spin"></div></div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+  <script src="JS/api.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+</html>
