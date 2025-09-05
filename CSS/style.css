@@ -20,17 +20,17 @@ body.dark {
   --muted-bg: #121317;
   --card: #161821;
 
-  --text: #f1f5f9;          /* near-white text */
-  --text-muted: #94a3b8;    /* softer but still visible gray-blue */
+  --text: #f1f5f9;          
+  --text-muted: #94a3b8;   
 
   --table-stripe: rgba(255,255,255,.05);
   --border: 1px solid rgba(255,255,255,.12);
   --shadow: 0 10px 24px rgba(0,0,0,.5);
 
-  --primary: #22c55e;       /* green */
-  --accent: #60a5fa;        /* light blue */
-  --danger: #ef4444;        /* red */
-  --warning: #fbbf24;       /* brighter amber */
+  --primary: #22c55e;       
+  --accent: #60a5fa;        
+  --danger: #ef4444;       
+  --warning: #fbbf24;       
 }
 
 
@@ -336,10 +336,10 @@ body::before {
 }
 
 #searchPost {
-  padding: 6px 10px;        /* slightly smaller padding for shorter height */
-  margin: 12px 0;           /* 12px top and bottom space */
-  border-radius: 10px;      /* keep rounded corners */
-  border: var(--border);    /* use your theme border */
+  padding: 6px 10px;        
+  margin: 12px 0;           
+  border-radius: 10px;      
+  border: var(--border);    
   width: calc(100% - 120px);
   box-sizing: border-box;
 }
