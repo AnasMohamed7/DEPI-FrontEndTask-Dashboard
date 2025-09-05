@@ -32,7 +32,7 @@ $(document).ready(async function () {
     renderPosts(filtered);
   });
 
-  // ✅ Create new post
+  //  Create new post
   $("#createPost").on("click", function () {
     let title = prompt("Enter post title:");
     if (!title || title.trim() === "") return toastr.error("Title is required!");
@@ -48,10 +48,10 @@ $(document).ready(async function () {
 
     posts.unshift(newPost); // add on top
     renderPosts(posts);
-    toastr.success("Post created successfully ✅");
+    toastr.success("Post created successfully ");
   });
 
-  // ✅ Edit post
+  //  Edit post
   $(document).on("click", ".edit", function () {
     const id = $(this).data("id");
     let post = posts.find((p) => p.id === id);
@@ -67,10 +67,10 @@ $(document).ready(async function () {
     if (newBody && newBody.trim() !== "") post.body = newBody.trim();
 
     renderPosts(posts);
-    toastr.success("Post updated successfully ✅");
+    toastr.success("Post updated successfully ");
   });
 
-  // ✅ Delete post
+  //  Delete post
   $(document).on("click", ".delete", function () {
     const id = $(this).data("id");
     posts = posts.filter((p) => p.id !== id);
@@ -78,7 +78,7 @@ $(document).ready(async function () {
     toastr.warning(`Deleted post ID: ${id}`);
   });
 
-  // ✅ Show comments
+  //  Show comments
   $(document).on("click", ".comments", async function () {
     const id = $(this).data("id");
     const box = $(`#comments-${id}`);
