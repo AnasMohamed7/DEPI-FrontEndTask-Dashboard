@@ -3,6 +3,8 @@
 A mini dashboard built with **HTML, CSS, JS, jQuery, DataTables, Animate.css, Toastr, and JSONPlaceholder API**.  
 Features simulate a small freelance-style project.
 
+![Alt text](images/Dashboard.png)
+
 ---
 
 ## 🚀 Features
